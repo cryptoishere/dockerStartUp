@@ -1,0 +1,2 @@
+# dockerStartUp
+PHP APACHE MYSQL
