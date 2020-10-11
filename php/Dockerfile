@@ -7,4 +7,4 @@ ADD https://raw.githubusercontent.com/mlocati/docker-php-extension-installer/mas
 RUN chmod uga+x /usr/local/bin/install-php-extensions && sync && \
     install-php-extensions pdo_mysql soap
 
-# gd xdebug bcmath intl ldap soap zip pdo_mysql
+# gd bcmath intl ldap soap zip pdo_mysql
