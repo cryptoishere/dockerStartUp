@@ -38,8 +38,7 @@ services:
       - "5306:3306"
     volumes:
       # - ./mysql:/var/lib/mysql
-      - ./dataTablesFix.sql:/docker-entrypoint-initdb.d/fixDump.sql
-      - ./dataTablesFix.sh:/usr/src/tablefixscript/dataTablesFix.sh
+      - ./fixMysqlBug1.cnf:/etc/mysql/conf.d/fixMysqlBug1.cnf
       - ./sql:/docker-entrypoint-initdb.d
     networks:
       - backend
