@@ -19,3 +19,19 @@ PHP APACHE MYSQL
 
 # IDE configuration
 After successful installation configure you IDE(VSCODE) xdebug launch.json configuration file, to make xDebug work properly
+## Example
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Listen for XDebug on WSL",
+            "type": "php",
+            "request": "launch",
+            "pathMappings": {
+                "/var/www/html": "${workspaceRoot}"
+            },
+            "hostname": "0.0.0.0",
+            "port": 9001
+        }
+    ]
+}
