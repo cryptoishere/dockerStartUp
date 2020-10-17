@@ -18,7 +18,7 @@ PHP APACHE MYSQL
 `docker-compose build && docker-compose up -d`
 
 # IDE configuration
-After successful installation configure you IDE(VSCODE) xdebug launch.json configuration file, to make xDebug work properly
+After successful installation configure IDE(VSCODE) xdebug launch.json configuration file, to make xDebug work properly
 ## Example
 {
     "version": "0.2.0",
