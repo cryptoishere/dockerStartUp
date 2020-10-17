@@ -38,7 +38,7 @@ services:
       - "5306:3306"
     volumes:
       # - ./mysql:/var/lib/mysql
-      - ./fixMysqlBug1.cnf:/etc/mysql/conf.d/fixMysqlBug1.cnf
+      - ./setSqlMode.cnf:/etc/mysql/conf.d/setSqlMode.cnf
       - ./sql:/docker-entrypoint-initdb.d
     networks:
       - backend
