@@ -10,7 +10,9 @@ services:
     networks:
       - backend
     volumes:
-      - ./public_html/:/var/www/html/
+    # https://docs.docker.com/docker-for-windows/wsl/#best-practices
+    # ~/Desktop/copyML/public_html/ path to public_html folder (project folder)
+      - ~/${HOST_PATH}/:/var/www/html/
     container_name: "${PHP_NAME}"
 
   apache:
@@ -27,7 +29,9 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./public_html/:/var/www/html/
+    # https://docs.docker.com/docker-for-windows/wsl/#best-practices
+    # ~/Desktop/toProjectFolder/public_html/ path to public_html folder (project folder)
+      - ~/${HOST_PATH}/:/var/www/html/
     container_name: "${APACHE_NAME}"
 
   database:
