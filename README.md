@@ -1,18 +1,25 @@
 # Docker build
 PHP APACHE MYSQL
 
+Docker compose setup.
+
 # Strating from cloning files to project folder
 `git clone https://github.com/cryptoishere/dockerStartUp.git`
 
 `cd dockerStartUp`
 
 ## Configurations
-* .env - set values or use existing
+* .env - edit environment variables for your need
 * php/custom_php.ini - customize php.ini >>> xDebug
-* public_html - app files goes here
-* sql - database <dump>.sql goes here
+
+* public_html - app files goes here (Project can be installed via Composer)
+* sql - database <dump>.sql goes here (On build docker use dump file to create database)
 
 * Additionally we can add extra php extensions in ./php/Dockerfile
+
+### Included
+xDebug-2.9.6, Composer 2.0.0-RC2
+
 
 # Run in command line
 `docker-compose build && docker-compose up -d`
@@ -35,3 +42,7 @@ After successful installation configure IDE(VSCODE) xdebug launch.json configura
         }
     ]
 }
+
+# OnSuccess
+URL = http://localhost
+DB  = 127.0.0.1:5306

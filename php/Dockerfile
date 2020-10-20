@@ -31,4 +31,4 @@ ADD ./custom_php.ini /usr/local/etc/php/php.ini
 
 # Install Composer
 RUN wget https://getcomposer.org/installer -O - -q \
-    | php -- --install-dir=/bin --filename=composer --quiet
+    | php -- --install-dir=/bin --filename=composer --version=2.0.0-RC2 --quiet
