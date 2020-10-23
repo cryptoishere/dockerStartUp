@@ -10,7 +10,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -q \
     && DEBIAN_FRONTEND=noninteractive apt-get install -qq -y \
       curl git zip unzip software-properties-common vim wget \
     && install-php-extensions \
-      bcmath bz2 calendar exif gd intl ldap \
+      bcmath bz2 calendar exif gd intl \
       mysqli pdo_mysql soap xsl zip sockets 
     #   memcached \
     #   opcache \
